@@ -11,8 +11,8 @@ if [ ! -d kcptun ]; then
 mkdir kcptun
 fi
 cd kcptun
-go get -u github.com/shadowsocks/kcptun/server
-go build -ldflags "-s -w" github.com/shadowsocks/kcptun/server
+go get -u github.com/ansonchen/kcptun/server
+go build -ldflags "-s -w" github.com/ansonchen/kcptun/server
 upx -9 server
 mv server $WORKDIRECTORY/bin/kcptun-server
 KCPTUN_INSTALL=yes
